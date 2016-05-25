@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+</head>
+<style type="text/css">
+    *{
+        padding:0;
+        margin:0 auto;
+    }
+    body{
+        color:#999;
+    }
+    #container{
+        min-width:360px;
+        width:expression(document.body.clientWidth < 600? "600px": "auto" ); 
+    }
+    .header{
+        width:100%;
+        height:8rem;
+        background:#5fc0cd;
+        text-align: center;
+        overflow: hidden;
+        position:fixed;
+        top:0;
+        left:0;
+        right:0;
+    }
+    .header-con{
+        padding-left:8rem;
+    }
+    button{
+        width:16%;
+        border-radius: 14px;
+        height:4.8rem;
+        margin-top:1.7rem;
+        font-size: 200%;
+    }
+    button:nth-child(1){
+        background:#55a8b3;
+        color:#fff;
+        border:2px solid #55a8b3;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        margin-right:-1.2rem;
+    }
+    button:nth-child(2){
+        background:#fff;
+        color:#5fc0cd;
+        border:2px solid #fff;
+    }
+    .loca-white{
+        float:right;
+        width:8rem;
+        height:8rem;
+        background:url(images/location-white.png) no-repeat center;
+        background-size:50%;
+    }
+
+
+    /*nav*/
+    .nav{
+        margin-top:8rem;
+        border-bottom:1px solid #e1e5e7;
+    }
+    .nav ul{
+        width:100%;
+        overflow:hidden;
+    }
+    .nav ul li{
+        list-style: none;
+        height:8rem;
+        float:left;
+        text-align: center;
+        width:29.1%;
+        color:#999;
+        font-size:200%;
+        line-height: 8rem;
+        background:url(images/more.png) no-repeat;
+        background-size:8%;
+        background-position:center right;
+        margin:0 1rem;
+    }
+
+    /*section*/
+    .section{
+        font-size:200%;
+    }
+    .section ul li{
+        list-style: none;
+        height:12rem;
+        padding:2rem;
+        border-bottom:1px solid #e1e5e7;
+    }
+    .section .sec-left{
+        float:left;
+    }
+    .section .sec-left p{
+        height:4rem;
+        line-height: 4rem;
+        text-indent: 5rem;
+    }
+    .sec-left p:nth-child(1){
+        background:url(images/x-date.png) no-repeat;
+        background-size:11%;
+        background-position: center left;
+    }
+    .sec-left p:nth-child(3){
+        background:url(images/x-loc.png) no-repeat;
+        background-size:9%;
+        background-position: center left;
+    }
+    .section .sec-right{
+        float:right;
+        color:#e63b0e;
+        height:12rem;
+        line-height: 12rem;
+    }
+
+    /*footer*/
+    .footer{
+        width:100%;
+        height:10rem;
+        background:#f8fafb;
+        border-top:1px solid #e1e5e7;
+        position:fixed;
+        bottom:0;
+        left:0;
+        right:0;
+        font-size:220%;
+        text-align: center;
+    }
+    .footer p{
+        float:left;
+        height:10rem;
+        width:10rem;
+        line-height:12rem;
+        text-align: center;
+        margin:0 4rem;
+    }
+    .footer p:nth-child(1){
+        margin-top:1.5rem;
+        background:url(images/b-home.png) no-repeat;
+        background-size:40%;
+        background-position:center top;
+    }
+    .footer p:nth-child(2){
+        background:url(images/b-write.png) no-repeat;
+        background-size:82%;
+        background-position:center 16px;
+    }
+    .footer p:nth-child(3){
+        margin-top:1.5rem;
+        background:url(images/b-mine.png) no-repeat;
+        background-size:40%;
+        background-position:center top;
+    }
+    .footer div{
+        overflow:hidden;
+        left:50%;
+        transform:translate(6%, 0);
+    }
+</style>
+<body>
+    <div id="container">
+        <div class="header">
+            <span class="loca-white"></span>
+            <div class="header-con">
+                <button>找雇主</button>
+                <button>找护工</button>
+            </div>
+            
+        </div>
+
+        <div class="nav">
+            <ul>
+                <li>所在地</li>
+                <li>食宿</li>
+                <li>病人情况</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <ul>
+                <li>
+                    <div class="sec-left">
+                        <p>服务日期</p>
+                        <p><b>2015-7-5 至 2015-7-12</b></p>
+                        <p>北京.通州.果园</p>
+                    </div>
+                    <p class="sec-right">
+                        <b>25元/小时</b>
+                    </p>
+                </li>
+                <li>
+                    <div class="sec-left">
+                        <p>服务日期</p>
+                        <p><b>2015-7-5 至 2015-7-12</b></p>
+                        <p>北京.通州.果园</p>
+                    </div>
+                    <p class="sec-right">
+                        <b>25元/小时</b>
+                    </p>
+                </li>
+                <li>
+                    <div class="sec-left">
+                        <p>服务日期</p>
+                        <p><b>2015-7-5 至 2015-7-12</b></p>
+                        <p>北京.通州.果园</p>
+                    </div>
+                    <p class="sec-right">
+                        <b>25元/小时</b>
+                    </p>
+                </li>
+                <li>
+                    <div class="sec-left">
+                        <p>服务日期</p>
+                        <p><b>2015-7-5 至 2015-7-12</b></p>
+                        <p>北京.通州.果园</p>
+                    </div>
+                    <p class="sec-right">
+                        <b>25元/小时</b>
+                    </p>
+                </li>
+                <li>
+                    <div class="sec-left">
+                        <p>服务日期</p>
+                        <p><b>2015-7-5 至 2015-7-12</b></p>
+                        <p>北京.通州.果园</p>
+                    </div>
+                    <p class="sec-right">
+                        <b>25元/小时</b>
+                    </p>
+                </li>
+                <li>
+                    <div class="sec-left">
+                        <p>服务日期</p>
+                        <p><b>2015-7-5 至 2015-7-12</b></p>
+                        <p>北京.通州.果园</p>
+                    </div>
+                    <p class="sec-right">
+                        <b>25元/小时</b>
+                    </p>
+                </li>
+                <li>
+                    <div class="sec-left">
+                        <p>服务日期</p>
+                        <p><b>2015-7-5 至 2015-7-12</b></p>
+                        <p>北京.通州.果园</p>
+                    </div>
+                    <p class="sec-right">
+                        <b>25元/小时</b>
+                    </p>
+                </li>
+            </ul>
+        </div>        
+
+        <div class="footer">
+            <div>
+                <p>首页</p>
+                <p></p>
+                <p>我的</p>
+            </div>
+            
+        </div>
+        
+    </div>
+</body>
+</html>

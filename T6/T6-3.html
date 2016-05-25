@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+</head>
+<style type="text/css">
+    *{
+        padding:0;
+        margin:0 auto;
+    }
+    body{
+        background:#29bde0;
+        color:#fff;
+    }
+    #container{
+        min-width:360px;
+        width:expression(document.body.clientWidth < 600? "600px": "auto" ); 
+    }
+    .header{
+        width:100%;
+        height:8rem;
+        position:fixed;
+        top:0;
+        left:0;
+        right:0;
+        font-size:330%;
+        line-height: 8rem;
+        text-align: center;
+        overflow: hidden;
+        border-bottom:1px solid #74d4eb;
+    }
+    .header span{
+        height:4rem;
+        width:4rem;
+        background:url(images/pic3.png) no-repeat;
+        background-size:200%;
+        top:50%;
+        transform:translate(0,50%);
+    }
+    .header span:nth-child(1){
+        float:left;
+        background-position:left top;
+        margin-left:2rem;
+    }
+    .header span:nth-child(2){
+        float:right;
+        background-position: right top;
+        margin-right:2rem;
+    }
+
+    /*section*/
+    .section{
+        margin-top:8rem;
+        padding-top:2rem;
+    }
+    .section .win{
+        height:20rem;
+        background:url(images/win.png) no-repeat center;
+        background-size:52%;
+    }
+    .section .great{
+        color:#ffc865;
+        font-size:300%;
+        padding:2rem 8rem;
+    }
+    .section .sec-top{
+        padding:0 8rem;
+        font-size:250%;
+        line-height:4rem;
+        margin-top:4rem;
+    }
+    .section .sec-top span{
+        display: inline-block;
+        width:30.5%;
+    }
+    .sec-bottom{
+        background:#fff;
+        color:#a6a6a6;
+        font-size:160%;
+        overflow:hidden;
+    }
+    .sec-bottom ul{
+        overflow:hidden;
+    }
+    .sec-bottom ul li{
+        list-style: none;
+        padding: 2rem 8rem 3rem 8rem;
+        border-bottom:1px solid #ddd;
+    }
+    .sec-bottom span{
+        float:right;
+        top:0;
+        line-height: 4rem;
+    }
+    .sec-bottom li p{
+        height:3rem;
+        line-height: 3rem;
+        font-size:150%;
+    }
+    .sec-bottom .sec-title{
+        line-height: 4rem;
+        height:4rem;
+        font-size: 170%;
+    }
+
+    /*footer*/
+    .footer{
+        background:rgba(41, 189, 224, 0.5);
+        position:fixed;
+        bottom:0;
+        left:0;
+        right:0;
+        height:12rem;
+        text-align: center;
+    }
+    .footer button{
+        border:none;
+        font-size:260%;
+        width:40%;
+        height:6rem;
+        color:#fff;
+        border-radius: 10px;
+        line-height:6rem;
+        margin:3rem 2rem;
+    }
+    .footer button:nth-child(1){
+        background:#f66f6f;
+    }
+    .footer button:nth-child(2){
+        background:#fbb435;
+    }
+</style>
+<body>
+    <div id="container">
+        <div class="header">
+            游戏结果
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="section">
+            <p class="win"></p>
+            <p class="great"><b>太棒了!你知道么？在捉鬼游戏中只有20%的卧底取得游戏最终的胜利哦！</b></p>
+            <div class="sec-top">
+                <p>本次游戏共计用时0小时25分钟</p>
+                <div>
+                    <span>杀    手0人</span>
+                    <span>警    察1人</span>
+                    <span>平    民6人</span>
+                </div>
+                <div>
+                    <span>狙击手0人</span>
+                    <span>医    生1人</span>
+                </div>
+                <p>卧底词汇：爱新觉罗</p>
+                <p>水民词汇：努尔哈赤</p>
+            </div>
+
+            <div class="sec-bottom">
+                <ul>
+                    <li>
+                        <span>0小时07分</span>
+                        <p class="sec-title"><b>第一天</b></p>
+                        <p>晚上：5号被杀手杀死，5号是水民</p>
+                        <p>白天：8号被全民投票投死，8号是杀手</p>
+                    </li>
+                    <li>
+                        <span>0小时07分</span>
+                        <p class="sec-title"><b>第一天</b></p>
+                        <p>晚上：5号被杀手杀死，5号是水民</p>
+                        <p>白天：8号被全民投票投死，8号是杀手</p>
+                    </li>
+                    <li>
+                        <span>0小时07分</span>
+                        <p class="sec-title"><b>第一天</b></p>
+                        <p>晚上：5号被杀手杀死，5号是水民</p>
+                        <p>白天：8号被全民投票投死，8号是杀手</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer">
+            <button>再来一局</button>
+            <button>上传并分享</button>
+        </div>
+    </div>
+</body>
+</html>

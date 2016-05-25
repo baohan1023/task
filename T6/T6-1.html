@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+</head>
+<style type="text/css">
+    *{
+        padding:0;
+        margin:0 auto;
+    }
+    body{
+        background:#f0f0f0;
+        color:#999;
+    }
+    #container{
+        min-width:360px;
+        width:expression(document.body.clientWidth < 600? "600px": "auto" ); 
+    }
+    .header{
+        width:100%;
+        height:8rem;
+        background:#29bde0 url(images/more.png) no-repeat;
+        background-size:7%;
+        background-position:2rem 3rem;
+        position:fixed;
+        top:0;
+        left:0;
+        right:0;
+    }
+
+    /*section*/
+    .section{
+        margin-top:8rem;
+        padding:2rem;
+        text-align: center;
+        font-size:300%;
+    }
+    .section .sec-top{
+        height:10rem;
+        background:#fff;
+        border:1px solid #c9c9c9;
+        overflow: hidden;
+        line-height: 10rem;
+    }
+    .more{
+        float:right;
+        display: inline-block;
+        width:4rem;
+        height:5rem;
+        background:url(images/pic.png) no-repeat;
+        background-size:190%;
+        background-position:left top;
+        top:50%;
+        transform:translate(0, 50%);
+    }
+    .sec-bottom{
+        margin-top:2rem;
+        background:#fff;
+        border:1px solid #c9c9c9;
+        text-align: center;
+        position:relative;
+    }
+    .sec-bottom-title{
+        color:#fbb435;
+        border-bottom:1px solid #fbb435;
+        font-size:150%;
+        height:8rem;
+        line-height:8rem;
+        margin-bottom:4rem;
+    }
+    .sec-bottom div p:nth-child(1){
+        margin:0 4rem;
+        height:12rem;
+        line-height: 12rem;
+        background:#69d1e9;
+        color:#fff;
+    }
+    .sec-bottom div p:nth-child(2){
+        height:8rem;
+        line-height: 8rem;
+    }
+    .sec-bottom ul{
+        width:12rem;
+        overflow:hidden;
+        margin-bottom:2rem;
+    }
+    .sec-bottom ul li{
+        list-style: none;
+        float:left;
+        width:2rem;
+        height:2rem;
+        background:url(images/pic.png) no-repeat;
+        background-position:63% bottom;
+        background-size:320%;
+        margin:0 0.5rem;
+    }
+    .sec-bottom ul li:nth-child(1){
+        background-position: left bottom;
+    }
+    .back{
+        position:absolute;
+        width:2.5rem;
+        height:5rem;
+        background:url(images/pic.png) no-repeat;
+        background-position:right top;
+        background-size:210%;
+        right:2rem;
+        top:50%;
+        transform:translate(47%, -52%);
+    }
+</style>
+<body>
+    <audio src="财富自由.mp3" loop="loop" autoplay="autoplay"></audio>
+    <div id="container">
+        <div class="header"></div>
+        <div class="section">
+            <div class="sec-top">
+                上次游戏：捉鬼猜词版
+                <span class="more"></span>
+            </div>
+            <div class="sec-bottom">
+                <div class="sec-bottom-title">捉鬼游戏</div>
+                <div>
+                    <p>简化版</p>
+                    <p>有1133个用户正在玩此款游戏</p>
+                </div>
+                <div>
+                    <p>猜词版</p>
+                    <p>有1133个用户正在玩此款游戏</p>
+                </div>
+                <div>
+                    <p>白痴版</p>
+                    <p>有1133个用户正在玩此款游戏</p>
+                </div>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <span class="back"></span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
