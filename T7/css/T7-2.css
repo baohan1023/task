@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+/*banner*/
+.banner{
+    background:url(../images/banner2.png) no-repeat center;
+    height: 248px;
+}
+
+/*section*/
+section{
+    margin-top:30px;
+    overflow:hidden;
+    margin-bottom:230px;
+}
+.title{
+    margin-bottom:30px;
+}
+.title span{
+    color:#29b078;
+}
+    /*left*/
+.left{
+    float:left;
+    width: 300px;
+    background:#fff;
+    border:1px solid #ededed;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px 1px #e1e1e1;
+}
+.left-title{
+    line-height: 60px;
+    border-bottom:1px solid #e6e6e6;
+    text-align: center;
+}
+.left ul{
+    margin-top:20px;
+    margin-left:116px;
+}
+.left li{
+    float:none;
+    color:#29b078;
+    line-height: 52px;
+}
+.left li span{
+    display:inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border:1px solid #ff650e;
+}
+.left li:nth-child(3){
+    color:#ff650e;
+}
+.left li:nth-child(3) span{
+    background-color: #f9a372;
+}
+
+    /*right*/
+.right{
+    float:right;
+    width: 870px;
+    border-radius: 5px;
+    background:#fff;
+    border:1px solid #ededed;
+    color:#999;
+    box-shadow: 2px 1px 6px 1px #e1e1e1;
+}
+.right-top{
+    border-bottom:1px solid #e6e6e6;
+    padding:26px 64px 6px 64px;
+    overflow:hidden;
+}
+.right-top p{
+    float:left;
+}
+.right-top p:nth-child(1){
+    width: 134px;
+    height: 122px;
+    background:url(../images/tudou.png) center;
+    margin-right:30px;
+}
+.right-top p:nth-child(2){
+    font-size:90%;
+    width: 560px;
+}
+.right-bottom{
+    padding:24px 72px 146px 66px;
+}
+.right-bottom p{
+    line-height: 30px;
+    margin-bottom:40px;
+}
